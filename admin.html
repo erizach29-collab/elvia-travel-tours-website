@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Elvia Travel & Tours Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Elvia Travel & Tours Ltd home">
+          <img src="assets/logo.png" alt="Elvia Travel & Tours Ltd" style="width: 320px; height: auto;" />
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="admin.html" class="active">Admin</a>
+        </nav>
+
+        <a class="btn btn-primary nav-cta" href="index.html">View Site</a>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container admin-wrap">
+        <div class="admin-panel">
+          <p class="eyebrow eyebrow-dark">Content Manager</p>
+          <h2 class="section-title" style="font-size: 2.3rem;">Update website pictures and contact details</h2>
+
+          <form id="adminForm">
+            <div class="field">
+              <label for="companyName">Company Name</label>
+              <input id="companyName" name="companyName" type="text" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" />
+            </div>
+
+            <div class="field">
+              <label for="phone1">Phone 1</label>
+              <input id="phone1" name="phone1" type="tel" />
+            </div>
+
+            <div class="field">
+              <label for="phone2">Phone 2</label>
+              <input id="phone2" name="phone2" type="tel" />
+            </div>
+
+            <div class="field">
+              <label for="location">Location</label>
+              <input id="location" name="location" type="text" />
+            </div>
+
+            <div class="field">
+              <label for="heroImage">Hero Background Image URL</label>
+              <input id="heroImage" name="heroImage" type="url" />
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="preview-panel">
+          <p class="eyebrow eyebrow-dark">Preview</p>
+          <h3 style="margin-top: 10px; color: var(--navy-deep);">Current Home Banner</h3>
+
+          <div class="preview-card">
+            <img id="previewHero" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80" alt="Preview hero image" />
+            <strong>Elvia Travel & Tours Ltd</strong>
+            <p>Travel bookings, safaris, tours, and worldwide experiences.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

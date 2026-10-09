@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Elvia Travel & Tours Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Elvia Travel & Tours Ltd home">
+          <img src="assets/logo.png" alt="Elvia Travel & Tours Ltd" style="width: 320px; height: auto;" />
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <a class="btn btn-primary nav-cta" href="contact.html">Plan My Trip</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <div class="container">
+          <p class="eyebrow">Our Services</p>
+          <h1>Travel planning built around your needs.</h1>
+          <p class="lead">
+            We handle your travel details so you can focus on enjoying the journey.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid-3">
+            <article class="service-card">
+              <div class="icon">✈️</div>
+              <h3>Flight & Ticketing</h3>
+              <p>Domestic and international air ticket booking with competitive pricing and convenient schedules.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="icon">🦁</div>
+              <h3>Safari Packages</h3>
+              <p>Luxury and adventure safaris to Maasai Mara, Amboseli, Tsavo, and other iconic destinations.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="icon">🏝️</div>
+              <h3>Holiday Packages</h3>
+              <p>Curated beach, city, and family holiday packages for relaxed and memorable experiences.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="icon">🏨</div>
+              <h3>Hotel Bookings</h3>
+              <p>Accommodation options selected to match your comfort, style, and budget expectations.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="icon">💼</div>
+              <h3>Corporate Travel</h3>
+              <p>Professional travel coordination for business meetings, conferences, and executive trips.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="icon">🛂</div>
+              <h3>Visa Assistance</h3>
+              <p>Support with visa application guidance and documentation requirements for international travel.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Elvia Travel & Tours Ltd" style="width: 220px; height: auto; margin-bottom: 18px;" />
+          <p>Your trusted travel partner for unforgettable journeys.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+254704006785">+254704006785</a></li>
+            <li><a href="tel:+2540740171568">+2540740171568</a></li>
+            <li><a href="mailto:sales@elviatravel.co.ke">sales@elviatravel.co.ke</a></li>
+            <li>Nairobi, Kenya</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow</h3>
+          <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <p>© <span id="year"></span> Elvia Travel & Tours Ltd. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
